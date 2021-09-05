@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Сергей\source\repos\tiktoktak\tiktoktak\Source.cpp(9,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\Сергей\source\repos\tiktoktak\tiktoktak\Source.cpp(21,20): warning C4018: '<': signed/unsigned mismatch
+  tiktoktak.vcxproj -> C:\Users\Сергей\source\repos\tiktoktak\Debug\tiktoktak.exe
