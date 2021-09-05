@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 #include<conio.h>
 #include<Windows.h>
 using namespace std;
@@ -24,11 +24,11 @@ void main()
 
 	setlocale(LC_ALL, "");
 
-	const unsigned int n = 9;	//Размер игрового поля
-	char field[n] = {};	//Игровое поле
+	const unsigned int n = 9;	//Р Р°Р·РјРµСЂ РёРіСЂРѕРІРѕРіРѕ РїРѕР»СЏ
+	char field[n] = {};	//РРіСЂРѕРІРѕРµ РїРѕР»Рµ
 	//InitField(field, n);
 	PrintField(field, n, '0');
-	cout << "Еще разочек? :-) \nДля выхода нажмите Escape, для продолжения нажмите любую клавишу.";
+	cout << "Р•С‰Рµ СЂР°Р·РѕС‡РµРє? :-) \nР”Р»СЏ РІС‹С…РѕРґР° РЅР°Р¶РјРёС‚Рµ Escape, РґР»СЏ РїСЂРѕРґРѕР»Р¶РµРЅРёСЏ РЅР°Р¶РјРёС‚Рµ Р»СЋР±СѓСЋ РєР»Р°РІРёС€Сѓ.";
 	if (_getch() != 27)main();
 }
 
@@ -73,13 +73,13 @@ void Move(char field[], const unsigned int n, char player)
 		{
 			key = _getch();
 			if (key == 27)return;
-			if (key < '1' || key >'9')cout << "Вы вышли за пределы игрового поля!" << endl;
+			if (key < '1' || key >'9')cout << "Р’С‹ РІС‹С€Р»Рё Р·Р° РїСЂРµРґРµР»С‹ РёРіСЂРѕРІРѕРіРѕ РїРѕР»СЏ!" << endl;
 		} while (key < '1' || key >'9');
 		if (field[key - '1'] == 0)field[key - '1'] = player;
 		else
 		{
 			busy = true;
-			cout << "Клетка уже занята!" << endl;
+			cout << "РљР»РµС‚РєР° СѓР¶Рµ Р·Р°РЅСЏС‚Р°!" << endl;
 		}
 	} while (busy);
 	/*if(player=='X')PrintField(field, n,'0');
@@ -110,7 +110,7 @@ void Check(char field[], const unsigned int n, char player)
 
 	if (game_over)
 	{
-		cout << player << " победил!\n";
+		cout << player << " РїРѕР±РµРґРёР»!\n";
 		return;
 	}
 
@@ -126,7 +126,7 @@ void Check(char field[], const unsigned int n, char player)
 
 	if (draw)
 	{
-		cout << "Ничья" << endl;
+		cout << "РќРёС‡СЊСЏ" << endl;
 		return;
 	}
 
