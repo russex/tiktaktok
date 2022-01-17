@@ -11,7 +11,7 @@ void PrintField(char field[], const unsigned int n, char player);
 void Move(char field[], const unsigned int n, char player);
 void Check(char field[], const unsigned int n, char player);
 
-void main()
+int main()
 {
 	setlocale(LC_ALL, "");
 
